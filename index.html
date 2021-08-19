@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./build/styles.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body class="flex flex-col items-center justify-center h-full">
+    <img
+      src="./images/logo.svg"
+      alt="spli tter"
+      class="md:p-20 p-10 inline-block"
+    />
+
+    <div
+      class="
+        md:w-2/3
+        w-full
+        mx-auto
+        p-5
+        flex flex-col
+        md:flex-row
+        bg-white
+        rounded-xl
+        dollar
+      "
+    >
+      <div class="md:w-1/2 w-full md:pl-3 md:pr-8 px-0">
+        <label class="block mb-6">
+          <span class="text-[color:var(--darker-grayish-cyan)] mb-2">Bill</span>
+          <input
+            type="number"
+            placeholder="$"
+            class="
+              bill
+              mt-1
+              block
+              w-full
+              rounded-md
+              bg-[color:var(--light-grayish-cyan)]
+              p-2
+              text-lg
+              font-extralight
+              hover:ring-1 hover:ring-[color:var(--strong-cyan)]
+              text-right
+            "
+          />
+        </label>
+        <h4 class="text-sm text-[color:var(--darker-grayish-cyan)] my-2">
+          Select Tip %
+        </h4>
+        <div class="grid grid-cols-3 gap-4">
+          <input
+            type="button"
+            value="5%"
+            class="
+              text-white
+              bg-[color:var(--very-dark-cyan)]
+              rounded-md
+              py-1.5
+              hover:bg-[color:var(--strong-cyan)]
+            "
+          />
+          <input
+            type="button"
+            value="10%"
+            class="
+              text-white
+              bg-[color:var(--very-dark-cyan)]
+              rounded-md
+              py-1.5
+              hover:bg-[color:var(--strong-cyan)]
+            "
+          />
+          <input
+            type="button"
+            value="15%"
+            class="
+              text-white
+              bg-[color:var(--very-dark-cyan)]
+              rounded-md
+              py-1.5
+              hover:bg-[color:var(--strong-cyan)]
+            "
+          />
+          <input
+            type="button"
+            value="25%"
+            class="
+              text-white
+              bg-[color:var(--very-dark-cyan)]
+              rounded-md
+              py-1.5
+              hover:bg-[color:var(--strong-cyan)]
+            "
+          />
+          <input
+            type="button"
+            value="50%"
+            class="
+              text-white
+              bg-[color:var(--very-dark-cyan)]
+              rounded-md
+              py-1.5
+              hover:bg-[color:var(--strong-cyan)]
+            "
+          />
+          <input
+            type="text"
+            class="
+              bg-[color:var(--light-grayish-cyan)]
+              rounded-md
+              py-1.5
+              hover:border hover:border-[color:var(--strong-cyan)]
+              text-center
+              text-[color:var(--very-dark-cyan)]
+            "
+            placeholder="Custom"
+          />
+        </div>
+        <label class="block mt-6">
+          <span
+            class="inline text-sm text-[color:var(--darker-grayish-cyan)] mb-2"
+            >Number of People</span
+          >
+
+          <input
+            type="number"
+            placeholder="$"
+            class="
+              text-right
+              mt-1
+              block
+              w-full
+              rounded-md
+              bg-[color:var(--light-grayish-cyan)]
+              border-transparent
+              hover:ring-red-500 hover:ring-1
+              p-2
+              text-lg
+              font-light
+              person
+            "
+          />
+        </label>
+      </div>
+      <div
+        class="
+          md:w-1/2
+          w-full
+          p-5
+          bg-[color:var(--very-dark-cyan)]
+          rounded-xl
+          md:mt-0
+          mt-8
+        "
+      >
+        <div class="flex justify-between items-center my-4">
+          <div class="text-sm">
+            <p class="text-white font-light">Tip Amount</p>
+            <p class="text-[color:var(--dark-grayish-cyan)]">/ person</p>
+          </div>
+          <div class="tip-total text-[color:var(--strong-cyan)] text-4xl"></div>
+        </div>
+        <div class="flex justify-between items-center mt-8 mb-20">
+          <div class="text-sm">
+            <p class="text-white font-light">Total</p>
+            <p class="text-[color:var(--dark-grayish-cyan)]">/ person</p>
+          </div>
+          <div
+            class="total-amount text-[color:var(--strong-cyan)] text-4xl"
+          ></div>
+        </div>
+
+        <button
+          type="reset"
+          class="
+            w-full
+            py-2
+            rounded-md
+            block
+            bg-[color:var(--strong-cyan)]
+            text-[color:var(--very-dark-cyan)]
+            reset-btn
+          "
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

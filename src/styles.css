@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+	--strong-cyan: hsl(172, 67%, 45%);
+	--very-dark-cyan: hsl(183, 100%, 15%);
+    --darker-grayish-cyan: hsl(186, 14%, 43%);
+    --dark-grayish-cyan: hsl(184, 14%, 56%);
+    --lighter-grayish-cyan: hsl(185, 41%, 84%);
+    --light-grayish-cyan: hsl(189, 41%, 97%);
+}
+
+body{
+    background-color:var(--lighter-grayish-cyan)
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  
+}
+
+input::placeholder{
+  vertical-align: middle;
+}
+
+.bill::placeholder{
+  content: url('../images/icon-dollar.svg');
+  
+}
+
+.person::placeholder{
+  content: url('../images/icon-person.svg');
+}
+
+
+.grid input::placeholder{
+  vertical-align: middle;
+  color: var(--very-dark-cyan);
+  font-size: 0.8rem;
+  text-align: center;
+}
